@@ -581,7 +581,7 @@ body.dark-mode .dark-hero {
 .about {
     padding: 120px 60px 120px 60px;
     position: relative;
-    background-image: url('svg/ruler-pattern.svg');
+    background-image: url('../svg/ruler-pattern.svg');
     background-repeat: repeat-y;
     background-position: left center;
     background-size: 25px auto;
@@ -718,7 +718,7 @@ body.dark-mode .dark-hero {
     padding: 40px 40px 40px 40px;
     border-top: 1px solid var(--primary-bg-color);
     position: relative;
-    background-image: url('svg/ruler-pattern.svg');
+    background-image: url('../svg/ruler-pattern.svg');
     background-repeat: repeat-x;
     background-position: center bottom;
     background-size: auto 20px;
@@ -1020,7 +1020,7 @@ body.dark-mode .dark-hero {
 
 .dark-mode .about-statistics {
     background: var(--text-color-light);
-    background-image: url('svg/ruler-pattern.svg');
+    background-image: url('../svg/ruler-pattern.svg');
     background-repeat: repeat-x;
     background-position: center bottom;
     background-size: auto 20px;
@@ -2047,7 +2047,7 @@ a.contact-link:hover span {
 }
 
 .dark-mode .about {
-    background-image: url('svg/ruler-pattern.svg');
+    background-image: url('../svg/ruler-pattern.svg');
 }
 
 .dark-mode .about::before {
@@ -2200,7 +2200,7 @@ a.contact-link:hover span {
 
 /* Dark mode grid background */
 .dark-mode .hero-background::before {
-    background-image: url('svg/grid-bg-dark.svg');
+    background-image: url('../svg/grid-bg-dark.svg');
     opacity: 0.4;
 }
 
@@ -2618,12 +2618,12 @@ a.contact-link:hover span {
     left: 0;
     width: 200%;
     height: 100%;
-    background-image: url('svg/grid-bg.svg');
+    background-image: url('../svg/grid-bg.svg');
     background-repeat: repeat-x;
     background-position: 0;
     animation: slideGrid 90s linear infinite;
     z-index: 0;
-    opacity: 1;
+    opacity: 1
 }
 
 @keyframes slideGrid {
