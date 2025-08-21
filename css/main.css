@@ -1,0 +1,363 @@
+/* CSS Variables */
+:root {
+    --primary-bg-color: #F1E6D4;
+    --secondary-bg-color: #1C1815;
+    --accent-color: #FE8F21;
+    --text-color-light: #1C1815;
+    --text-color-dark: #F1E6D4;
+    --font-geist: 'Geist', sans-serif;
+    --font-geist-mono: 'Geist Mono', monospace;
+}
+
+/* Base styles */
+html {
+    font-size: 62.5%;
+    background-color: var(--primary-bg-color) !important;
+}
+
+html body {
+    font-family: var(--font-geist) !important;
+    line-height: 1.6;
+    background-color: var(--primary-bg-color) !important;
+    color: var(--text-color-light) !important;
+    overflow-x: hidden;
+    position: relative;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(to right, rgba(0,0,0,0.1) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0,0,0,0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    z-index: -1;
+}
+
+/* Typography */
+html body h1,
+html body h2,
+html body h3,
+html body h4,
+html body h5,
+html body h6 {
+    font-family: var(--font-geist) !important;
+}
+
+html body p {
+    font-family: var(--font-geist) !important;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.logo svg {
+    width: 65px;
+    height: 55px;
+    color: var(--text-color-light);
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.nav-btn {
+    font-family: var(--font-geist-mono) !important;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.nav-outline {
+    border: 1px solid var(--text-color-light);
+    background: transparent;
+    color: var(--text-color-light);
+}
+
+.nav-outline:hover {
+    background: var(--text-color-light);
+    color: var(--primary-bg-color);
+}
+
+.nav-solid {
+    border: 1px solid var(--text-color-light);
+    background: var(--text-color-light);
+    color: var(--primary-bg-color);
+}
+
+.nav-solid:hover {
+    background: transparent;
+    color: var(--text-color-light);
+}
+
+/* Dark mode toggle */
+.dark-mode-toggle {
+    width: 50px;
+    height: 26px;
+    background: var(--text-color-light);
+    border: none;
+    border-radius: 13px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.dark-mode-toggle::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background: var(--primary-bg-color);
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+    background: var(--accent-color);
+}
+
+/* Hero section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80vh;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 4.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text-color-light);
+}
+
+.stats {
+    display: flex;
+    gap: 40px;
+}
+
+.stats p {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-label {
+    font-size: 1.4rem;
+    font-weight: 400;
+    opacity: 0.7;
+    margin-top: 5px;
+}
+
+.hero-image {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-graphic-svg {
+    max-width: 100%;
+    height: auto;
+    z-index: 2;
+    position: relative;
+}
+
+.hero-decor-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.logomark-text,
+.scalable-text {
+    position: absolute;
+    color: var(--text-color-light);
+    opacity: 0.3;
+}
+
+.logomark-text {
+    top: 20px;
+    left: 20px;
+}
+
+.scalable-text {
+    bottom: 20px;
+    right: 20px;
+}
+
+/* About section */
+.about {
+    padding: 80px 0;
+    position: relative;
+}
+
+.about h2 {
+    font-size: 3.6rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: var(--text-color-light);
+}
+
+.about-content p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: var(--text-color-light);
+}
+
+.about-decor-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.about-circle,
+.about-line,
+.about-triangle-grid {
+    position: absolute;
+    color: var(--accent-color);
+}
+
+.about-quote {
+    margin-top: 60px;
+    padding: 40px;
+    background: rgba(254, 143, 33, 0.1);
+    border-left: 4px solid var(--accent-color);
+}
+
+.about-quote p {
+    font-size: 2rem;
+    font-style: italic;
+    margin: 0;
+    color: var(--text-color-light);
+}
+
+/* Statistics section */
+.statistics {
+    padding: 80px 0;
+    background: var(--secondary-bg-color);
+    color: var(--text-color-dark);
+}
+
+.statistics h2 {
+    font-size: 3.6rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: var(--text-color-dark);
+}
+
+/* Design philosophy section */
+.design-philosophy {
+    padding: 80px 0;
+    position: relative;
+}
+
+.design-philosophy h3 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: var(--text-color-light);
+}
+
+.design-decor-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.footer-left {
+    font-family: var(--font-geist-mono) !important;
+    font-size: 1.4rem;
+    color: var(--text-color-light);
+}
+
+.footer-right svg {
+    color: var(--text-color-light);
+}
+
+/* Dark mode styles */
+.dark-mode {
+    --primary-bg-color: #1C1815;
+    --secondary-bg-color: #F1E6D4;
+    --text-color-light: #F1E6D4;
+    --text-color-dark: #1C1815;
+}
+
+.dark-mode body::before {
+    background-image:
+        linear-gradient(to right, rgba(255,255,255,0.1) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,0.1) 1px, transparent 1px);
+}
+
+.dark-mode .statistics {
+    background: var(--primary-bg-color);
+    color: var(--text-color-light);
+}
+
+.dark-mode .statistics h2 {
+    color: var(--text-color-light);
+}
+
+.dark-mode .about-quote {
+    background: rgba(254, 143, 33, 0.2);
+}
+
+.dark-mode footer {
+    border-top-color: rgba(255,255,255,0.1);
+}
