@@ -9,6 +9,44 @@
     --font-geist-mono: 'Geist Mono', monospace;
 }
 
+/* System preference detection for dark mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-bg-color: #1C1815;
+        --secondary-bg-color: #F1E6D4;
+        --text-color-light: #F1E6D4;
+        --text-color-dark: #1C1815;
+    }
+    
+    body {
+        background-color: var(--primary-bg-color) !important;
+        color: var(--text-color-light) !important;
+    }
+    
+    /* Apply dark mode styles when system preference is dark */
+    body:not(.light-mode) {
+        --primary-bg-color: #1C1815;
+        --secondary-bg-color: #F1E6D4;
+        --text-color-light: #F1E6D4;
+        --text-color-dark: #1C1815;
+    }
+}
+
+/* System preference detection for light mode */
+@media (prefers-color-scheme: light) {
+    :root {
+        --primary-bg-color: #F1E6D4;
+        --secondary-bg-color: #1C1815;
+        --text-color-light: #1C1815;
+        --text-color-dark: #F1E6D4;
+    }
+    
+    body {
+        background-color: var(--primary-bg-color) !important;
+        color: var(--text-color-light) !important;
+    }
+}
+
 /* Base styles */
 html {
     font-size: 62.5%;
