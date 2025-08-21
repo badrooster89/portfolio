@@ -474,7 +474,14 @@ body {
     font-weight: 500;
     margin-bottom: 15%;
     color: var(--text-color-light);
-    line-height: 0.57;
+    line-height: 0.78;
+}
+
+/* Firefox-specific line-height fix */
+@-moz-document url-prefix() {
+    .hero-content h1 {
+        line-height: 0.57;
+    }
 }
 
 .hero-content h1 br {
