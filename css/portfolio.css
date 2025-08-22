@@ -2584,6 +2584,7 @@ a.contact-link:hover span {
         width: 95%;
         max-height: 95vh;
         flex-direction: column;
+        overflow: hidden;
     }
 
     .modal-header {
@@ -2597,6 +2598,8 @@ a.contact-link:hover span {
         width: 100%;
         padding: 24px;
         overflow-y: auto;
+        max-height: calc(95vh - 33vh);
+        -webkit-overflow-scrolling: touch;
     }
 
     .modal-project-info h2 {
@@ -2611,6 +2614,12 @@ a.contact-link:hover span {
     .screenshots-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 16px;
+        margin-bottom: 20px;
+    }
+    
+    .screenshot-item {
+        aspect-ratio: 16/9;
+        min-height: 80px;
     }
 
     .details-grid {
