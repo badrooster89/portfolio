@@ -2624,10 +2624,14 @@ a.contact-link:hover span {
 
     .modal-body {
         width: 100%;
-        padding: 24px;
+        padding: 36px 24px 24px 24px;
         overflow-y: auto;
         max-height: calc(95vh - 33vh);
         -webkit-overflow-scrolling: touch;
+    }
+
+    .modal-featured-image {
+        height: 33vh;
     }
 
     .modal-project-info h2 {
@@ -2640,7 +2644,7 @@ a.contact-link:hover span {
     }
 
     .screenshots-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 16px;
         margin-bottom: 20px;
     }
