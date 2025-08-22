@@ -2588,6 +2588,12 @@ a.contact-link:hover span {
     border-color: var(--text-color-light);
 }
 
+.dark-mode .modal-redaction-label {
+    background: #1C1815;
+    color: #F1E6D4;
+    border-color: #1C1815;
+}
+
 .dark-mode .screenshot-item {
     border-color: var(--text-color-light);
 }
