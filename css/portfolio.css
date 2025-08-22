@@ -2362,7 +2362,7 @@ a.contact-link:hover span {
     width: 60%;
     height: 100vh;
     overflow: hidden;
-    border-right: 1px solid var(--text-color-light);
+    /* border-right: 1px solid var(--text-color-light); */
 }
 
 .modal-redaction-label {
