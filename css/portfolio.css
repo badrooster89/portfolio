@@ -1755,10 +1755,19 @@ a.contact-link:hover span {
     width: 100%;
 }
 
+/* Remove bottom border from last tag in each proficiency category */
+.proficiencies .proficiency-category .tags .tag:last-child {
+    border-bottom: none;
+}
+
 .dark-mode .proficiencies .tag {
     background: var(--primary-bg-color);
     color: var(--text-color-light);
     border-bottom: 1px dashed var(--text-color-light);
+}
+
+.dark-mode .proficiencies .proficiency-category .tags .tag:last-child {
+    border-bottom: none;
 }
 
 /* Work section */
