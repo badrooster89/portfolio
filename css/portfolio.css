@@ -2397,9 +2397,9 @@ a.contact-link:hover span {
     background-image: var(--modal-bg-image);
     background-size: cover;
     background-position: center;
-    filter: blur(20px) brightness(0.4);
-    opacity: 0.5;
-    z-index: 0;
+    filter: blur(20px) brightness(0.5);
+    opacity: 0.33;
+    z-index: 1;
     pointer-events: none;
 }
 
@@ -2436,7 +2436,7 @@ a.contact-link:hover span {
 .modal-project-info h2 {
     font-size: 3.2rem;
     font-weight: 600;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
     color: var(--text-color-light);
 }
 
@@ -2452,6 +2452,8 @@ a.contact-link:hover span {
     flex-wrap: wrap;
     gap: 12px;
     margin-bottom: 40px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--text-color-light);
 }
 
 .modal-project-tags .tag {
@@ -2465,13 +2467,6 @@ a.contact-link:hover span {
 
 .modal-screenshots {
     margin-bottom: 40px;
-}
-
-.modal-screenshots h3 {
-    font-size: 2.4rem;
-    font-weight: 600;
-    margin-bottom: 24px;
-    color: var(--text-color-light);
 }
 
 .screenshots-grid {
@@ -2506,12 +2501,7 @@ a.contact-link:hover span {
     box-shadow: 0 0 0 2px var(--accent-color);
 }
 
-.modal-details h3 {
-    font-size: 2.4rem;
-    font-weight: 600;
-    margin-bottom: 24px;
-    color: var(--text-color-light);
-}
+
 
 .details-grid {
     display: flex;
@@ -2569,8 +2559,6 @@ a.contact-link:hover span {
 
 .dark-mode .modal-project-info h2,
 .dark-mode .modal-project-info p,
-.dark-mode .modal-screenshots h3,
-.dark-mode .modal-details h3,
 .dark-mode .detail-item h4,
 .dark-mode .detail-item p {
     color: var(--text-color-light);
@@ -2620,11 +2608,6 @@ a.contact-link:hover span {
 
     .modal-project-info h2 {
         font-size: 2.4rem;
-    }
-
-    .modal-screenshots h3,
-    .modal-details h3 {
-        font-size: 2rem;
     }
 
     .screenshots-grid {
