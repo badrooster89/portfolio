@@ -2394,7 +2394,7 @@ a.contact-link:hover span {
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--secondary-bg-color);
+    background: #1C1815;
     opacity: 1;
     z-index: 0;
     pointer-events: none;
