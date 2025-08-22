@@ -2394,11 +2394,11 @@ a.contact-link:hover span {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: var(--modal-bg-image);
+    background-image: repeating-linear-gradient( 45deg, transparent, transparent 2px, rgba(255,255,255,0.1) 2px, rgba(255,255,255,0.1) 4px );
     background-size: cover;
     background-position: center;
-    filter: blur(20px) brightness(0.5);
-    opacity: 0.33;
+    /* filter: blur(20px) brightness(0.5); */
+    opacity: 0.5;
     z-index: 1;
     pointer-events: none;
 }
@@ -2619,7 +2619,7 @@ a.contact-link:hover span {
         width: 100%;
         height: 33vh;
         border-right: none;
-        border-bottom: 1px solid var(--text-color-light);
+        /* border-bottom: 1px solid var(--text-color-light); */
     }
 
     .modal-body {
