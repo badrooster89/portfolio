@@ -2387,23 +2387,6 @@ a.contact-link:hover span {
     position: relative;
 }
 
-.modal-featured-image::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: var(--modal-bg-image);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: blur(20px) brightness(0.4);
-    opacity: 0.5;
-    z-index: 0;
-    pointer-events: none;
-}
-
 .modal-featured-image::after {
     content: '';
     position: absolute;
@@ -2412,7 +2395,7 @@ a.contact-link:hover span {
     right: 0;
     bottom: 0;
     background: var(--secondary-bg-color);
-    opacity: 0.3;
+    opacity: 1;
     z-index: 0;
     pointer-events: none;
 }
