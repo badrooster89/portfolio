@@ -2385,6 +2385,24 @@ a.contact-link:hover span {
     overflow-y: auto;
     display: block;
     max-height: 90vh;
+    position: relative;
+}
+
+.modal-featured-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: var(--modal-bg-image);
+    background-size: 200% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(20px) brightness(0.8);
+    opacity: 0.3;
+    z-index: 0;
+    pointer-events: none;
 }
 
 .modal-featured-image img {
@@ -2393,6 +2411,8 @@ a.contact-link:hover span {
     object-fit: contain;
     object-position: top;
     display: block;
+    position: relative;
+    z-index: 1;
 }
 
 .modal-body {
