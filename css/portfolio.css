@@ -2474,6 +2474,7 @@ a.contact-link:hover span {
     font-weight: 600;
     margin-bottom: 24px;
     color: var(--text-color-light);
+    display: none;
 }
 
 .screenshots-grid {
@@ -2515,6 +2516,7 @@ a.contact-link:hover span {
     font-weight: 600;
     margin-bottom: 24px;
     color: var(--text-color-light);
+    display: none;
 }
 
 .details-grid {
