@@ -2624,7 +2624,7 @@ a.contact-link:hover span {
 
     .modal-body {
         width: 100%;
-        padding: 36px 24px 24px 24px;
+        padding: 36px 24px 40px 24px;
         overflow-y: auto;
         max-height: calc(95vh - 33vh);
         -webkit-overflow-scrolling: touch;
