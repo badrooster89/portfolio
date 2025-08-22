@@ -2443,7 +2443,7 @@ a.contact-link:hover span {
 .modal-project-info p {
     font-size: 1.6rem;
     line-height: 1.6;
-    margin-bottom: 24px;
+    margin-bottom: 36px;
     color: var(--text-color-light);
 }
 
@@ -2452,7 +2452,7 @@ a.contact-link:hover span {
     flex-wrap: wrap;
     gap: 12px;
     margin-bottom: 40px;
-    padding-bottom: 24px;
+    padding-bottom: 40px;
     border-bottom: 1px solid var(--text-color-light);
 }
 
