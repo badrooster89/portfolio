@@ -2302,7 +2302,7 @@ a.contact-link:hover span {
     margin: auto;
     background: var(--primary-bg-color);
     border: 2px solid var(--text-color-light);
-    box-shadow: 8px 8px 0 var(--text-color-light);
+    box-shadow: 0px 0px 0 var(--text-color-light);
     overflow: hidden;
     z-index: 1001;
     display: flex;
