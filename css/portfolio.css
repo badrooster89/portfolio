@@ -2457,8 +2457,8 @@ a.contact-link:hover span {
 }
 
 .modal-project-tags .tag {
-    background: var(--text-color-light);
-    color: var(--primary-bg-color);
+    background: transparent;
+    color: var(--text-color-light);
     border: 1px solid var(--text-color-light);
     padding: 8px 16px;
     font-size: 1.2rem;
@@ -2581,8 +2581,8 @@ a.contact-link:hover span {
 }
 
 .dark-mode .modal-project-tags .tag {
-    background: var(--text-color-light);
-    color: var(--primary-bg-color);
+    background: transparent;
+    color: var(--text-color-light);
     border-color: var(--text-color-light);
 }
 
